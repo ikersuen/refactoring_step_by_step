@@ -1,5 +1,5 @@
 # refactoring_step_by_step
-# public -> private
+# (1) public -> private
 # Step1: write assertTrue and assertFalse test case for "should_check_driver"
 # Step2: run test case
 # Step3: [Driver]create getter for "age"
@@ -7,3 +7,11 @@
 # Step5: [Police]change driver.age => driver.get
 # Step6: [Driver]int age (public -> private)
 # Step7: Run test case
+
+#(2) change [Police] checkDriver function name
+# Step1: write a same test case as should_check_driver, change the test case name to "should_check_driver_be_of_age"
+# Step2: [Police]check "checkDriver" fucntion find usage
+# Step3: [Police]write a function having same function content as checkDriver, change name to checkDriverBeOfAge
+# Step4: [Test]change function name from "checkDriver" to "checkDriverBeOfAge" under test case "should_check_driver_be_of_age"
+# Step5: Run test case
+# Step6: Remove checkDriver function in Police and Test case "should_check_driver"
