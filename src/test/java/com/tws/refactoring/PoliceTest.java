@@ -9,7 +9,10 @@ public class PoliceTest {
 
     @Test
     void should_check_driver_be_of_age() {
+
         assertTrue(new Police().checkDriverBeOfAge(new Driver(18)));
         assertFalse(new Police().checkDriverBeOfAge(new Driver(17)));
     }
+
+
 }

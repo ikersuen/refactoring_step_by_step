@@ -15,3 +15,8 @@
 # Step4: [Test]change function name from "checkDriver" to "checkDriverBeOfAge" under test case "should_check_driver_be_of_age"
 # Step5: Run test case
 # Step6: Remove checkDriver function in Police and Test case "should_check_driver"
+
+#(3) driver.getAge() >= 18
+# Step1: create a new function isAnAdult
+# Step2: replace "driver.getAge() >= 18" into isAnAdult
+# Step3: run test case

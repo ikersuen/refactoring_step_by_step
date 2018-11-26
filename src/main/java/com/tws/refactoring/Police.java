@@ -1,8 +1,13 @@
 package com.tws.refactoring;
 
 public class Police {
+
     public boolean checkDriverBeOfAge(Driver driver) {
-        if(driver.getAge() >= 18) return true;
+        if(isAnAdult(driver)) return true;
         else return false;
+    }
+
+    private boolean isAnAdult(Driver driver){
+        return driver.getAge() >= 18;
     }
 }
