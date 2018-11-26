@@ -20,3 +20,7 @@
 # Step1: create a new function isAnAdult
 # Step2: replace "driver.getAge() >= 18" into isAnAdult
 # Step3: run test case
+
+#(4) duplicate code
+# Step1: change "if(isAnAdult(driver)) return true; else return false;" into "return isAnAdult(driver)"
+# Step2: run test case
